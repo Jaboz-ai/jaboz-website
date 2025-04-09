@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Jaboz - Bot thú cưng AI</title>
+  <title>Liên hệ Jaboz</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h1>👋 Xin chào! Tôi là Jaboz</h1>
-  <p>Một chú bot thú cưng nhỏ gọn, cảm xúc, và thông minh.</p>
-  <p>Được xây dựng trên nền tảng ESP32-S3, màn hình OLED, cảm ứng và loa mini.</p>
+  <div class="container">
+    <h2>Liên hệ với chúng tôi</h2>
+    <form action="https://formspree.io/f/moqgqzdy" method="POST">
+      <label for="name">Họ và tên</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Nội dung</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Gửi liên hệ</button>
+    </form>
+  </div>
 </body>
 </html>
